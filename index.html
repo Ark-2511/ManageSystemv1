@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://mzzkohjxjammpihakwbz.supabase.co; connect-src 'self' https://mzzkohjxjammpihakwbz.supabase.co wss://mzzkohjxjammpihakwbz.supabase.co; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Gạo Café – Màn hình chờ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="seg" role="group" aria-label="Chế độ giao diện"><button id="bl" aria-pressed="true">Sáng</button><button id="bd" aria-pressed="false">Tối</button></div>
+<div id="wrap"><div id="stage">
+  <div class="hello"><h1>Chào mừng bạn</h1><p>Chạm vào một nhóm món để bắt đầu gọi.</p></div>
+  <button class="finder" id="finder" type="button"><svg viewBox="0 0 24 24"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z M18.5 15l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg>Tìm ly dành cho bạn</button>
+  <button class="back" id="back" type="button"><svg viewBox="0 0 24 24"><path d="M19 12H5 M11 6l-6 6 6 6"/></svg>Quay lại</button>
+  <div class="logo" aria-label="Gạo Café">
+    <svg viewBox="0 0 60 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M30 4C14 7 6 28 8 50c2 18 14 26 24 24 14-3 20-20 18-38C48 20 41 4 30 4z"/><path d="M9 44h40c0 14-8 22-20 22S9 58 9 44z"/><ellipse cx="29" cy="44" rx="20" ry="4.5"/></svg>
+    <div class="t"><b>GẠO</b><i>café</i></div>
+  </div>
+  <div id="cards"></div>
+  <div id="drinks"></div>
+  <div class="cta">Chạm để chọn món</div>
+  <div class="cats" id="cats"></div>
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js" integrity="sha384-0w2KAL2YHP6wKOkUDzkCDGgVvfmHnj02DHeQ6XcHOgTfFsGyonKOpShMH1x6nk9o" crossorigin="anonymous"></script>
+<script src="js/qrcode.js"></script>
+<script src="js/kiosk.js"></script>
+</body>
+</html>
